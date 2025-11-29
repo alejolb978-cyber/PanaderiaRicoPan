@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="474" prefWidth="694.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CatalogoController">
+
+    <!-- Top bar -->
+    <HBox layoutX="89.0" layoutY="12.0" prefHeight="48" prefWidth="115.0" styleClass="top-bar" />
+
+    <!-- Left drawer -->
+    <VBox fx:id="drawer" alignment="TOP_LEFT" layoutX="-200" layoutY="48" prefHeight="426" prefWidth="200" spacing="8" styleClass="drawer">
+        <children>
+            <Button fx:id="btnFavoritos" maxWidth="Infinity" text="Favoritos" />
+            <Button fx:id="btnCarrito" maxWidth="Infinity" text="Carrito" />
+            <Button fx:id="btnHistorial" maxWidth="Infinity" text="Historial" />
+            <Button fx:id="btnCerrar" maxWidth="Infinity" text="Cerrar sesión" />
+        </children>
+    </VBox>
+
+    <!-- Grid productos -->
+    <GridPane fx:id="gridProductos" hgap="12" layoutX="32.0" layoutY="67.0" prefHeight="360" prefWidth="630" vgap="12">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="33" />
+            <ColumnConstraints percentWidth="33" />
+            <ColumnConstraints percentWidth="33" />
+        </columnConstraints>
+    </GridPane>
+
+    <!-- MENU HAMBURGUESA -->
+    <MenuButton fx:id="menuNav" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" styleClass="menu-button" text="☰">
+
+        <items>
+            <MenuItem fx:id="itemCarrito" text="Carrito" />
+            <MenuItem fx:id="itemFavoritos" text="Favoritos" />
+            <MenuItem fx:id="itemHistorial" text="Historial" />
+            <MenuItem fx:id="itemCerrarSesion" text="Cerrar Sesión" />
+        </items>
+    </MenuButton>
+
+    <!-- Bottom bar -->
+    <HBox alignment="CENTER_LEFT" layoutX="20" layoutY="438" spacing="10">
+        <children>
+            <Button fx:id="btnVerMas" text="Ver más" />
+            <Label fx:id="lblPagina" text="Página 1" />
+        </children>
+    </HBox>
+   <Label layoutX="77.0" layoutY="17.0" prefHeight="38.0" prefWidth="221.0" styleClass="title" text="Tienda de Panes">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+
+</AnchorPane>
