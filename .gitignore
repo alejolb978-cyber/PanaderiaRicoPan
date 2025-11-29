@@ -1,0 +1,37 @@
+# === Carpetas que NO deben subirse ===
+
+/build/
+/dist/
+/nbproject/private/
+/nbproject/configs/
+/nbproject/var/
+/test/
+/out/
+
+# === Archivos que NO deben subirse ===
+*.class
+*.log
+*~
+
+# === Ignorar ejecutables locales ===
+*.exe
+*.dll
+*.bat
+
+# === Ignorar JavaFX SDK locales ===
+javafx-sdk*/
+
+# === permitir recursos e imágenes ===
+!src/Resources/
+!src/Resources/imagenes/
+!src/Resources/imagenes/*.jpg
+!src/Resources/imagenes/*.png
+
+# === permitir vistas (FXML) ===
+!src/vista/
+!src/vista/*.fxml
+
+# === permitir controladores ===
+!src/controlador/
+!src/controlador/*.java
+

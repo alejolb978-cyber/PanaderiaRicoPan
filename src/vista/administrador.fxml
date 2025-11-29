@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="197.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AdministradorController">
+   <children>
+      <Text layoutX="19.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese la contraseña para acceder:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtContrasena" layoutX="23.0" layoutY="70.0" />
+      <Button layoutX="23.0" layoutY="119.0" mnemonicParsing="false" onAction="#continuar" text="Continuar" />
+   </children>
+</AnchorPane>
