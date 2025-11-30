@@ -13,7 +13,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/vista/catalogo.fxml")));
+        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/vista/iniciar.fxml")));
         stage.setScene(scene);
         stage.setTitle("Panadería Rico Pan");
         stage.show();
