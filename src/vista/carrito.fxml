@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controlador.CarritoController"
+            prefWidth="670" prefHeight="474">
+
+    <Label text="Carrito de Compras"
+           layoutX="20" layoutY="20"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <ListView fx:id="listaCarrito"
+              layoutX="20" layoutY="70"
+              prefWidth="630" prefHeight="320"/>
+
+    <Label fx:id="lblTotal"
+           text="Total: $0.00"
+           layoutX="20" layoutY="400"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <Button fx:id="btnComprar"
+            text="Comprar"
+            layoutX="550" layoutY="430"
+            prefWidth="100"/>
+
+    <Button fx:id="btnVolver"
+            text="Volver"
+            layoutX="20" layoutY="430"/>
+
+</AnchorPane>

@@ -27,7 +27,7 @@ public class FuncionAdminController implements Initializable {
     @FXML
     private Button btnAgregar;
 
-    private String productoSeleccionado; // ← ESTA LINEA FALTABA
+    private String productoSeleccionado; 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

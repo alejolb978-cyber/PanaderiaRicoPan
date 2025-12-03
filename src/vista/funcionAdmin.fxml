@@ -27,7 +27,7 @@
       </ImageView>
       <Text layoutX="35.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pan Mexicano" />
       <Text layoutX="251.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pan Finlandes" />
-      <Text layoutX="35.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIDAD: 10 USD" />
-      <Text layoutX="251.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIDAD: 10 USD" />
+      <Text layoutX="35.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIDAD: $5.500" />
+      <Text layoutX="251.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIDAD: $6.700 " />
    </children>
 </AnchorPane>
